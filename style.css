@@ -1,0 +1,16 @@
+h1 {
+  font-family: helvetica;
+  color: purple;
+
+}
+p {
+  color: royalblue;
+}
+
+.para-2{
+  background-color: lavender;
+}
+
+#para-3id{
+  border: 5px dashed lightgreen;
+}
