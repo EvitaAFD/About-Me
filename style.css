@@ -6,21 +6,31 @@ h1 {
   border-bottom: dashed blue;
 
 }
-p {
-  font-family: Arial;
+
+.para-1 {
+  font-family: Times;
   font-size: 20px;
-  color: blue;
+  color: darkblue;
+}
+
+h2 {
+  font-family: papyrus;
+  font-size: 25px;
+  color:lightgreen;
 }
 
 .para-2{
-  font-family: Arial;
+  font-family: Times;
   font-size: 15px;
-  color: lightgreen;
+}
+
+h3{
+  font-family: papyrus;
+  font-size: 20px;
+  color: pink;
 }
 
 #para-3id{
-  font-family: Arial;
+  font-family: Times;
   font-size: 15px;
-  font-style: oblique;
-  color: pink;
 }
