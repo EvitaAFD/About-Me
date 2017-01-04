@@ -1,16 +1,22 @@
 h1 {
-  font-family: times;
+  font-family:40px cursive;
   color: purple;
+  background-color: lightblue;
+  border-bottom: dashed blue;
 
 }
 p {
+  font-family: 20px fantasy;
   color: royalblue;
 }
 
 .para-2{
+  font-family: 15px fantasy;
+  font-style: italic;
   background-color: lavender;
 }
 
 #para-3id{
-  border: 5px dashed lightgreen;
+  font-family: fantasy;
+  font-size: 15px;
 }
