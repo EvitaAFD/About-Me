@@ -7,7 +7,7 @@ h1 {
 
 }
 
-.para-1 {
+.brief-summary {
   font-family: Times;
   font-size: 20px;
   color: darkblue;
@@ -19,7 +19,7 @@ h2 {
   color:lightgreen;
 }
 
-.para-2{
+.early-life{
   font-family: Times;
   font-size: 15px;
 }
@@ -30,7 +30,7 @@ h3{
   color: pink;
 }
 
-#para-3id{
+#accomplishments{
   font-family: Times;
   font-size: 15px;
 }
