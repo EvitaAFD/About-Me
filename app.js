@@ -1,16 +1,20 @@
 'use strict';
 
-var userAnswer = confirm('Are you ready?!');
+/* var userAnswer = confirm('Are you ready?!');
 
 if (userAnswer) {
   console.log('User is ready!');
 } else {
   console.log('That\'s sad, user not ready');
 }
+*/
+var userName = prompt('Before we begin please tell me your name!');
 
-alert('I am going to ask you questions about me. Good luck!');
+console.log('The user\'s name is: ' + userName);
 
-var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
+alert('Hello ' + userName + ' I am going to ask you some questions so you can get to know me. Good luck!');
+
+/* var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
 
 console.log('The user answered: ' + question1 + ' to question 1');
 
@@ -58,4 +62,42 @@ if(question5 === 'Y' || question5 === 'YES'){
   alert('No way! Clowns are horrifying! Have you seen the news?!');
 } else {
   alert('You\'re right he is not a clown! He is a master mixolgist and can do molecular mixology, still strange but super cool!');
+}
+
+var a = 0;  //number of times to run through loop
+var b = 3;  //number of attempts
+
+while (a < 4){
+// convert string to integer using parseInt in prompt
+  var question6 = parseInt(prompt ('I want you to guess something about me!  How many dogs do I have? Please enter the number of dogs you think I have using 0-10.  You have four chances!'));
+
+  if(question6 === 2) {
+    alert('You are correct ' + userName + ' great guess!');
+    a = 5;
+  } else if(question6 < 2) {
+    alert('Not quite! Your\'e answer is too low! You have ' + b + ' more chances! Try again: ');
+    b--;
+  } else {
+    alert('Too many dogs, too high! I love them but I have an apartment not a farm! You have ' + b + ' more chances. Try again');
+    b--;
+  }
+  console.log('The user answered ' + question6 + ' to question 6');
+  a++;
+}
+*/
+
+var states = ['arizona', 'new mexico', 'california', 'kansas'];
+
+for(var index = 0; index < 6; index++) {
+  var question7 = prompt('Can you list a state that I have lived in other than Washington? You have 6 chances, good luck!').toLowerCase();
+  console.log(index);
+  for(var c = 0; c < states.length; c++) {
+    console.log(states[c] + ' inside second for loop');
+    console.log(states + [c]);
+    if(question7 === states[c]){
+      console.log(states[c]);
+      alert('The options were Arizona, New Mexico, California, and Kansas');
+      index = 6;
+    }
+  }
 }
