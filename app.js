@@ -17,16 +17,19 @@ console.log('The user\'s name is: ' + userName);
 
 alert('Hello ' + userName + ' I am going to ask you some questions so you can get to know me. Good luck!');
 
-var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
+function quest1Func() {
+  var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
 
-count++;
-console.log('The user answered: ' + question1 + ' to question 1');
+  count++;
+  console.log('The user answered: ' + question1 + ' to question 1');
 
-if (question1 === 'Y' || question1 === 'YES') {
-  alert('Good job! Green chile is like duct tape!');
-} else {
-  alert('You must not know her very well!');
+  if (question1 === 'Y' || question1 === 'YES') {
+    alert('Good job! Green chile is like duct tape!');
+  } else {
+    alert('You must not know her very well!');
+  }
 }
+quest1Func();
 
 var question2 = prompt('Question 2! Did Eve trade a Subaru WRX in for a Prius?').toUpperCase();
 
