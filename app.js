@@ -31,6 +31,7 @@ function quest1Func() {
 }
 quest1Func();
 
+function quest2Func() {
 var question2 = prompt('Question 2! Did Eve trade a Subaru WRX in for a Prius?').toUpperCase();
 
 count++;
@@ -41,7 +42,10 @@ if (question2 === 'Y' || question2 === 'YES') {
 } else {
   alert('Better luck next time, it was a sad day when she sold it! Being an adult is hard.');
 }
+}
+quest2Func();
 
+function quest3Func() {
 var question3 = prompt('Question 3! Does Eve love squirrels?').toUpperCase();
 
 count++;
@@ -52,7 +56,10 @@ if (question3 === 'Y' || question3 === 'YES') {
 } else {
   alert('Good job! Squirrels can be jerks.');
 }
+}
+quest3Func();
 
+function quest4Func() {
 var question4 = prompt('Question 4! Did Eve create a greeting card series called \'Squirrels Gone Wild?\'').toUpperCase();
 
 count++;
@@ -63,7 +70,10 @@ if(question4 === 'Y' || question4 === 'YES') {
 } else {
   alert('Wrong, she did, I know, she\'s weird.');
 }
+}
+quest4Func();
 
+function quest5Func() {
 var question5 = prompt('Question 5! Is Eve\'s boyfriend a professional Auguste clown?').toUpperCase();
 
 count++;
@@ -74,7 +84,10 @@ if(question5 === 'Y' || question5 === 'YES'){
 } else {
   alert('You\'re right he is not a clown! He is a master mixolgist and can do molecular mixology, still strange but super cool!');
 }
+}
+quest5Func();
 
+function quest6Func() {
 var a = 0;  //number of times to run through loop
 var b = 3;  //number of attempts
 
@@ -96,7 +109,10 @@ while (a < 4){
   console.log('The user answered ' + question6 + ' to question 6');
   a++;
 }
+}
+quest6Func();
 
+function quest7Func() {
 var states = ['arizona', 'new mexico', 'california', 'kansas'];
 
 for(var index = 0; index < 6; index++) {
@@ -115,6 +131,8 @@ for(var index = 0; index < 6; index++) {
     }
   }
 }
+}
+quest7Func();
 // bellow logs number of answers user got correct and alerts them
 alert(userName + ' you answered ' + count + ' questions correctly!');
 console.log('User got this number of correct answers' + count);
