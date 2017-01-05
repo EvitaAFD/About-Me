@@ -1,21 +1,25 @@
 'use strict';
 
-/* var userAnswer = confirm('Are you ready?!');
+// count var combined with c++ in questions counts userAnswer
+var count = 0;
+
+var userAnswer = confirm('Are you ready?!');
 
 if (userAnswer) {
   console.log('User is ready!');
 } else {
   console.log('That\'s sad, user not ready');
 }
-*/
+
 var userName = prompt('Before we begin please tell me your name!');
 
 console.log('The user\'s name is: ' + userName);
 
 alert('Hello ' + userName + ' I am going to ask you some questions so you can get to know me. Good luck!');
 
-/* var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
+var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
 
+count++;
 console.log('The user answered: ' + question1 + ' to question 1');
 
 if (question1 === 'Y' || question1 === 'YES') {
@@ -26,6 +30,7 @@ if (question1 === 'Y' || question1 === 'YES') {
 
 var question2 = prompt('Question 2! Did Eve trade a Subaru WRX in for a Prius?').toUpperCase();
 
+count++;
 console.log('The user answered: ' + question2 + ' to question 2');
 
 if (question2 === 'Y' || question2 === 'YES') {
@@ -36,6 +41,7 @@ if (question2 === 'Y' || question2 === 'YES') {
 
 var question3 = prompt('Question 3! Does Eve love squirrels?').toUpperCase();
 
+count++;
 console.log('The user answered: ' + question3 + ' to question 3');
 
 if (question3 === 'Y' || question3 === 'YES') {
@@ -46,6 +52,7 @@ if (question3 === 'Y' || question3 === 'YES') {
 
 var question4 = prompt('Question 4! Did Eve create a greeting card series called \'Squirrels Gone Wild?\'').toUpperCase();
 
+count++;
 console.log('The user answered: ' + question4 + ' to question 4');
 
 if(question4 === 'Y' || question4 === 'YES') {
@@ -56,6 +63,7 @@ if(question4 === 'Y' || question4 === 'YES') {
 
 var question5 = prompt('Question 5! Is Eve\'s boyfriend a professional Auguste clown?').toUpperCase();
 
+count++;
 console.log('The user answered: ' + question5 + ' to question 5');
 
 if(question5 === 'Y' || question5 === 'YES'){
@@ -81,23 +89,29 @@ while (a < 4){
     alert('Too many dogs, too high! I love them but I have an apartment not a farm! You have ' + b + ' more chances. Try again');
     b--;
   }
+  count++;
   console.log('The user answered ' + question6 + ' to question 6');
   a++;
 }
-*/
 
 var states = ['arizona', 'new mexico', 'california', 'kansas'];
 
 for(var index = 0; index < 6; index++) {
-  var question7 = prompt('Can you list a state that I have lived in other than Washington? You have 6 chances, good luck!').toLowerCase();
+  var question7 = prompt('Can you list a state that I have lived in other than Washington? You have 6 chances to guess correctly.  If you guess incorrectly this box will pop open again and give you another chance. Good luck!').toLowerCase();
+  count++;
+
   console.log(index);
+
   for(var c = 0; c < states.length; c++) {
     console.log(states[c] + ' inside second for loop');
     console.log(states + [c]);
     if(question7 === states[c]){
       console.log(states[c]);
-      alert('The options were Arizona, New Mexico, California, and Kansas');
+      alert('The options were Arizona, New Mexico, California, and Kansas, if you answered any of these, you are amazing!  Otherwise, learn how to pay attention!');
       index = 6;
     }
   }
 }
+// bellow logs number of answers user got correct and alerts them
+alert(userName + ' you answered ' + count + ' questions correctly!');
+console.log(count);
