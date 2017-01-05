@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict'; must always be at the top of js doc, boilerplate
 
 //     Do/While loop
 
@@ -30,3 +30,18 @@ while(index > 0) {    //this makes it start after 0, not inclusive
   console.log('the index of while loop is', index);
  index--;        //stops this from infinite looping
 }
+
+//FUNCTIONS
+// would use the bellow to
+function sayHello(){
+  Console.log('Hey everyone!');
+}
+sayHello //calls this FUNCTIONS
+
+function addTwoThings(numberOne, numberTwo){ //numberOne and numberTwo are the parameters and will be passed into this function
+  return numberOne + numberTwo; //creates output of two parameters
+}
+console.log(addTwoThings(10, 100)); //logs what addTwoThings calculated 10, 100 are the arguments
+colsole.log(addTwoTnings('hello', 'you')); // would concatenates the two strings
+
+var subtractTwoValues = 

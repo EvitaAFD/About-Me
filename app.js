@@ -82,9 +82,11 @@ while (a < 4){
   if(question6 === 2) {
     alert('You are correct ' + userName + ' great guess!');
     a = 5;
+    //a = 5 closes the loop because user got the answer correctly
   } else if(question6 < 2) {
     alert('Not quite! Your\'e answer is too low! You have ' + b + ' more chances! Try again: ');
     b--;
+    //b-- decrements by 1 so b is now one less chance to guess
   } else {
     alert('Too many dogs, too high! I love them but I have an apartment not a farm! You have ' + b + ' more chances. Try again');
     b--;
@@ -92,6 +94,7 @@ while (a < 4){
   count++;
   console.log('The user answered ' + question6 + ' to question 6');
   a++;
+  //a++ increments the a variable number of attempts to close the loop when they hit 4 attempts
 }
 
 var states = ['arizona', 'new mexico', 'california', 'kansas'];

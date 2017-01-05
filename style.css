@@ -2,7 +2,7 @@ h1 {
   font-family: papyrus;
   font-size: 30px;
   color: purple;
-  background: -webkit-linear-gradient(lightblue, lightpink, lavender);
+  background: -webkit-linear-gradient(lightblue, lavender, lavender);
   border: dotted blue;
   padding: 5%;
 
@@ -54,5 +54,4 @@ ol {
   font-family: Times;
   font-size: 12px;
   background: -webkit-linear-gradient(left top, lightpink, lightblue);
-  opacity: 0.5%;
 }
