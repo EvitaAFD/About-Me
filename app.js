@@ -114,4 +114,4 @@ for(var index = 0; index < 6; index++) {
 }
 // bellow logs number of answers user got correct and alerts them
 alert(userName + ' you answered ' + count + ' questions correctly!');
-console.log(count);
+console.log('User got this number of correct answers' + count);
