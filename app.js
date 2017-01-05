@@ -17,17 +17,21 @@ console.log('The user\'s name is: ' + userName);
 
 alert('Hello ' + userName + ' I am going to ask you some questions so you can get to know me. Good luck!');
 
-var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
+function quest1Func() {
+  var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
 
-count++;
-console.log('The user answered: ' + question1 + ' to question 1');
+  count++;
+  console.log('The user answered: ' + question1 + ' to question 1');
 
-if (question1 === 'Y' || question1 === 'YES') {
-  alert('Good job! Green chile is like duct tape!');
-} else {
-  alert('You must not know her very well!');
+  if (question1 === 'Y' || question1 === 'YES') {
+    alert('Good job! Green chile is like duct tape!');
+  } else {
+    alert('You must not know her very well!');
+  }
 }
+quest1Func();
 
+function quest2Func() {
 var question2 = prompt('Question 2! Did Eve trade a Subaru WRX in for a Prius?').toUpperCase();
 
 count++;
@@ -38,7 +42,10 @@ if (question2 === 'Y' || question2 === 'YES') {
 } else {
   alert('Better luck next time, it was a sad day when she sold it! Being an adult is hard.');
 }
+}
+quest2Func();
 
+function quest3Func() {
 var question3 = prompt('Question 3! Does Eve love squirrels?').toUpperCase();
 
 count++;
@@ -49,7 +56,10 @@ if (question3 === 'Y' || question3 === 'YES') {
 } else {
   alert('Good job! Squirrels can be jerks.');
 }
+}
+quest3Func();
 
+function quest4Func() {
 var question4 = prompt('Question 4! Did Eve create a greeting card series called \'Squirrels Gone Wild?\'').toUpperCase();
 
 count++;
@@ -60,7 +70,10 @@ if(question4 === 'Y' || question4 === 'YES') {
 } else {
   alert('Wrong, she did, I know, she\'s weird.');
 }
+}
+quest4Func();
 
+function quest5Func() {
 var question5 = prompt('Question 5! Is Eve\'s boyfriend a professional Auguste clown?').toUpperCase();
 
 count++;
@@ -71,7 +84,10 @@ if(question5 === 'Y' || question5 === 'YES'){
 } else {
   alert('You\'re right he is not a clown! He is a master mixolgist and can do molecular mixology, still strange but super cool!');
 }
+}
+quest5Func();
 
+function quest6Func() {
 var a = 0;  //number of times to run through loop
 var b = 3;  //number of attempts
 
@@ -96,7 +112,10 @@ while (a < 4){
   a++;
   //a++ increments the a variable number of attempts to close the loop when they hit 4 attempts
 }
+}
+quest6Func();
 
+function quest7Func() {
 var states = ['arizona', 'new mexico', 'california', 'kansas'];
 
 for(var index = 0; index < 6; index++) {
@@ -115,6 +134,8 @@ for(var index = 0; index < 6; index++) {
     }
   }
 }
+}
+quest7Func();
 // bellow logs number of answers user got correct and alerts them
 alert(userName + ' you answered ' + count + ' questions correctly!');
 console.log('User got this number of correct answers' + count);
