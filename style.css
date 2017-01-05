@@ -7,13 +7,18 @@ h1 {
 
 }
 
+h2 {
+  font-family: papyrus;
+  font-size: 25px;
+}
+
 .brief-summary {
   font-family: Times;
   font-size: 20px;
   color: darkblue;
 }
 
-h2 {
+h3 {
   font-family: papyrus;
   font-size: 25px;
   color:lightgreen;
@@ -24,7 +29,7 @@ h2 {
   font-size: 15px;
 }
 
-h3{
+h4{
   font-family: papyrus;
   font-size: 20px;
   color: pink;
