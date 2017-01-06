@@ -21,7 +21,7 @@ var questions = ['These are all yes or no questions, please enter Yes or No, or 
 
 var correctAns = [['Y','YES'],['Y','YES'], ['N', 'NO'], ['Y','YES'], ['N','NO']];
 
-var possibleResp = [[]]
+var possibleResp = [[]]; //do i need to place all the possible responses if they are the same or just one interation to access via index
 
 function quest1Func() {
   var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
