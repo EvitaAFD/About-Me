@@ -17,6 +17,12 @@ console.log('The user\'s name is: ' + userName);
 
 alert('Hello ' + userName + ' I am going to ask you some questions so you can get to know me. Good luck!');
 
+var questions = ['These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?', 'Question 2! Did Eve trade a Subaru WRX in for a Prius?', 'Question 3! Does Eve love squirrels?', 'Question 4! Did Eve create a greeting card series called \'Squirrels Gone Wild?\'', 'Question 5! Is Eve\'s boyfriend a professional Auguste clown?'];
+
+var correctAns = [['Y','YES'],['Y','YES'], ['N', 'NO'], ['Y','YES'], ['N','NO']];
+
+var possibleResp = [[]]
+
 function quest1Func() {
   var question1 = prompt('These are all yes or no questions, please enter Yes or No, or Y or N. Does Eve believe that green chile can fix anything?').toUpperCase();
 
@@ -24,9 +30,9 @@ function quest1Func() {
   console.log('The user answered: ' + question1 + ' to question 1');
 
   if (question1 === 'Y' || question1 === 'YES') {
-    alert('Good job! Green chile is like duct tape!');
+    alert('Good job! You are correct!');
   } else {
-    alert('You must not know her very well!');
+    alert('Awe shucks, you got it wrong!');
   }
 }
 quest1Func();
@@ -38,9 +44,9 @@ function quest2Func() {
   console.log('The user answered: ' + question2 + ' to question 2');
 
   if (question2 === 'Y' || question2 === 'YES') {
-    alert('You are correct! She cried when she turned over the keys!');
+    alert('Good job! You are correct!');
   } else {
-    alert('Better luck next time, it was a sad day when she sold it! Being an adult is hard.');
+    alert('Awe shucks, you got it wrong!');
   }
 }
 quest2Func();
@@ -52,9 +58,9 @@ function quest3Func() {
   console.log('The user answered: ' + question3 + ' to question 3');
 
   if (question3 === 'Y' || question3 === 'YES') {
-    alert('No! She thinks they are hilarious but does not love them, and does not want squirrel things as gifts');
+    alert('Awe shucks, you got it wrong!');
   } else {
-    alert('Good job! Squirrels can be jerks.');
+    alert('Good job! You are correct!');
   }
 }
 quest3Func();
@@ -66,9 +72,9 @@ function quest4Func() {
   console.log('The user answered: ' + question4 + ' to question 4');
 
   if(question4 === 'Y' || question4 === 'YES') {
-    alert('So she doesn\'t love squirrels but they are fun to draw, yay art school!');
+    alert('Good job! You are correct!');
   } else {
-    alert('Wrong, she did, I know, she\'s weird.');
+    alert('Awe shucks, you got it wrong!');
   }
 }
 quest4Func();
@@ -80,9 +86,9 @@ function quest5Func() {
   console.log('The user answered: ' + question5 + ' to question 5');
 
   if(question5 === 'Y' || question5 === 'YES'){
-    alert('No way! Clowns are horrifying! Have you seen the news?!');
+    alert('Awe shucks, you got it wrong!');
   } else {
-    alert('You\'re right he is not a clown! He is a master mixolgist and can do molecular mixology, still strange but super cool!');
+    alert('Good job! You are correct!');
   }
 }
 quest5Func();
