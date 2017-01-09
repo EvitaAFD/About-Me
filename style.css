@@ -1,16 +1,26 @@
+body {
+  background-image: url("http://i63.tinypic.com/t5gjzs.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 h1 {
   font-family: papyrus;
-  font-size: 30px;
-  color: purple;
-  background: -webkit-linear-gradient(lightblue, lavender, lavender);
-  border: dotted blue;
-  padding: 5%;
+  font-size: 50px;
+  color: #1C3BAF;
+  text-align: center;
+  background: -webkit-linear-gradient(#7C90DC, #C5F2FA, #C5F2FA);
+  opacity: 10%;
+  border: solid #4784DC;
+  padding: 2%;
 
 }
 
 h2 {
   font-family: papyrus;
-  font-size: 25px;
+  font-size: 30px;
+  color: #2F15AF;
+  text-align: center;
 }
 
 ul {
@@ -25,33 +35,48 @@ ul {
 
 h3 {
   font-family: papyrus;
-  font-size: 25px;
-  color:lightgreen;
+  font-size: 30px;
+  color:#4766D9;
+  text-align: center;
 }
 
 .early-life{
   font-family: Times;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 h4{
   font-family: papyrus;
-  font-size: 20px;
-  color: pink;
+  font-size: 30px;
+  color: #AF66D4;
+  text-align: center;
 }
 
-#accomplishments{
+#accomplishments {
   font-family: Times;
-  font-size: 15px;
+  font-size: 18px;
+}
+
+#fresh-face {
+  border: solid black;
+}
+
+#windy{
+  border: solid black;
+}
+
+#sunrise {
+  border: solid black;
 }
 
 h5 {
   font-family: papyrus;
-  font-size: 15px;
+  font-size: 20px;
+  text-align: center;
 }
 
 ol {
   font-family: Times;
-  font-size: 12px;
-  background: -webkit-linear-gradient(left top, lightpink, lightblue);
+  font-size: 16px;
+  background: -webkit-linear-gradient(left top, #E3D0FA, #D1F2EB);
 }
